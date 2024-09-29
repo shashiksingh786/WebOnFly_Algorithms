@@ -15,6 +15,7 @@
             int first = arr[0];
             int second = arr[1];
 
+            // l1 -> Largest No.   l2-Second Largest No.
             int l1 = first;
             int l2 = second;
             if (first < second)
