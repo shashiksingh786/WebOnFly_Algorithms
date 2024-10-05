@@ -42,6 +42,22 @@
             }
             Console.WriteLine($"Largest No. is {l1} and Second Largest No. is {l2}");
 
+
+            /// Note - Complexity is O(n)
+
+        }
+
+
+        public static void FindLargestAndSecondLargestNoInArrayNext(int[] arr)
+        {
+            Array.Sort(arr);
+            Array.Reverse(arr);
+
+            int first = arr[0];
+            int second = arr[1];
+
+            Console.WriteLine($"Largest No. is {first} and Second Largest No. is {second}");
+
         }
     }
 }
