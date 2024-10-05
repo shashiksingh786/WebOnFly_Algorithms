@@ -48,8 +48,15 @@
         }
 
 
+        /// <summary>
+        /// 2. Use of Array - Write an algorithm which finds the position of largest and second largest element in an array A with n>1 elements. Give its Complexity
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public static void FindLargestAndSecondLargestNoInArrayNext(int[] arr)
         {
+            if (arr.Length == 0) { Console.WriteLine("Empty Array List"); return; }
+
             Array.Sort(arr);
             Array.Reverse(arr);
 
