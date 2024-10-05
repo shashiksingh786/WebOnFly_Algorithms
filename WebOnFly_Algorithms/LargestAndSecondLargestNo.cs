@@ -1,4 +1,6 @@
-﻿namespace WebOnFly_Algorithms
+﻿using System.Collections.Generic;
+
+namespace WebOnFly_Algorithms
 {
     static internal class LargestAndSecondLargestNo
     {
@@ -60,11 +62,25 @@
             Array.Sort(arr);
             Array.Reverse(arr);
 
-            int first = arr[0];
-            int second = arr[1];
+            int largest = arr[0];
+            int secondLargest = arr[1];
 
-            Console.WriteLine($"Largest No. is {first} and Second Largest No. is {second}");
+            Console.WriteLine($"Largest No. is {largest} and Second Largest No. is {secondLargest}");
 
+        }
+
+        /// <summary>
+        /// 3. Use of Linq - Write an algorithm which finds the position of largest and second largest element in an array A with n>1 elements. Give its Complexity
+        /// </summary>
+        /// <param name="arr"></param>
+        public static void FindLargestAndSecondLargestNoInArrayLinq(int[] arr)
+        {
+            if (arr.Length == 0) { Console.WriteLine("Empty Array List"); return; }
+
+            int largest = arr.OrderByDescending(x => x).First();
+            int secondLargest=arr.OrderByDescending(x => x).Skip(1).First();
+
+            Console.WriteLine($"Largest No. is {largest} and Second Largest No. is {secondLargest}");
         }
     }
 }

@@ -5,5 +5,7 @@ using WebOnFly_Algorithms;
 Console.WriteLine("Hello, World!");
 int[] input = [1, 4, 70, 3, 6, 8, 44, 67, 33, 88, 48];
 //LargestAndSecondLargestNo.FindLargestAndSecondLargestNoInArray(input);
-LargestAndSecondLargestNo.FindLargestAndSecondLargestNoInArrayNext(input);
+//LargestAndSecondLargestNo.FindLargestAndSecondLargestNoInArrayNext(input);
+LargestAndSecondLargestNo.FindLargestAndSecondLargestNoInArrayLinq(input);
+
 
