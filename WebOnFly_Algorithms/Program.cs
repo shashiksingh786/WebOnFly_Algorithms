@@ -2,7 +2,7 @@
 using WebOnFly_Algorithms;
 
 Console.WriteLine("Hello, Techie!  Your Result below ............v");
-int[] input = [1, 40, 34, 21, 50, 22, 12, 9, 5];
+//int[] input = [1, 40, 34, 21, 50, 22, 12, 9, 5];
 
 //LargestAndSecondLargestNo.FindLargestAndSecondLargestNoInArray(input);
 //LargestAndSecondLargestNo.FindLargestAndSecondLargestNoInArrayNext(input);
@@ -15,5 +15,11 @@ int[] input = [1, 40, 34, 21, 50, 22, 12, 9, 5];
 // Sum of digit 
 //Console.WriteLine(SumOfDigit.SumOfDigitOfNumber(405));
 //Console.WriteLine(SumOfDigit.SumOfDigitOfNumberLinq(12345));
-Console.WriteLine(SumOfDigit.SumOfDigitOfNumberRecursion(12345));
+//Console.WriteLine(SumOfDigit.SumOfDigitOfNumberRecursion(12345));
+
+// Calculate No. of spanning trees
+Console.WriteLine("Enter the number of vertices in the complete graph:");
+long vertices = Int64.Parse(Console.ReadLine());
+long result=NoOfSpanningTrees.CalculateSpanningTrees(vertices);
+Console.WriteLine(result);
 
