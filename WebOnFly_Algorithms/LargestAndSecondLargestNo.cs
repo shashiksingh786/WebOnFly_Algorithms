@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace WebOnFly_Algorithms
+﻿namespace WebOnFly_Algorithms
 {
     static internal class LargestAndSecondLargestNo
     {
-
         /// <summary>
         /// 1. Write an algorithm which finds the position of largest and second largest element in an array A with n>1 elements. Give its Complexity
         /// </summary>
@@ -12,7 +9,7 @@ namespace WebOnFly_Algorithms
         /// <returns></returns>
         public static void FindLargestAndSecondLargestNoInArray(int[] arr)
         {
-             if(arr.Length == 0) { Console.WriteLine("Empty Array List");  return; }
+            if (arr.Length == 0) { Console.WriteLine("Empty Array List"); return; }
 
             int first = arr[0];
             int second = arr[1];
@@ -44,11 +41,8 @@ namespace WebOnFly_Algorithms
             }
             Console.WriteLine($"Largest No. is {l1} and Second Largest No. is {l2}");
 
-
             /// Note - Complexity is O(n)
-
         }
-
 
         /// <summary>
         /// 2. Use of Array - Write an algorithm which finds the position of largest and second largest element in an array A with n>1 elements. Give its Complexity
@@ -66,7 +60,6 @@ namespace WebOnFly_Algorithms
             int secondLargest = arr[1];
 
             Console.WriteLine($"Largest No. is {largest} and Second Largest No. is {secondLargest}");
-
         }
 
         /// <summary>
@@ -78,7 +71,7 @@ namespace WebOnFly_Algorithms
             if (arr.Length == 0) { Console.WriteLine("Empty Array List"); return; }
 
             int largest = arr.OrderByDescending(x => x).First();
-            int secondLargest=arr.OrderByDescending(x => x).Skip(1).First();
+            int secondLargest = arr.OrderByDescending(x => x).Skip(1).First();
 
             Console.WriteLine($"Largest No. is {largest} and Second Largest No. is {secondLargest}");
         }

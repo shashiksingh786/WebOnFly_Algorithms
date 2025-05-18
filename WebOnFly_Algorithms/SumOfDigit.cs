@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WebOnFly_Algorithms
+﻿namespace WebOnFly_Algorithms
 {
     static internal class SumOfDigit
     {
@@ -57,8 +51,5 @@ namespace WebOnFly_Algorithms
         {
             return n == 0 ? 0 : n % 10 + SumOfDigitOfNumberRecursionLinq(n / 10);
         }
-
-
-       
     }
 }

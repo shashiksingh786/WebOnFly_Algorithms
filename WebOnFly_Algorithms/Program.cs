@@ -12,7 +12,7 @@ Console.WriteLine("Hello, Techie!  Your Result below ............v");
 //SortingAlgos.BubbleSort(input, input.Length);
 //SortingAlgos.PrintArr(input, input.Length);
 
-// Sum of digit 
+// Sum of digit
 //Console.WriteLine(SumOfDigit.SumOfDigitOfNumber(405));
 //Console.WriteLine(SumOfDigit.SumOfDigitOfNumberLinq(12345));
 //Console.WriteLine(SumOfDigit.SumOfDigitOfNumberRecursion(12345));
@@ -20,6 +20,5 @@ Console.WriteLine("Hello, Techie!  Your Result below ............v");
 // Calculate No. of spanning trees
 Console.WriteLine("Enter the number of vertices in the complete graph:");
 long vertices = Int64.Parse(Console.ReadLine());
-long result=NoOfSpanningTrees.CalculateSpanningTrees(vertices);
+long result = NoOfSpanningTrees.CalculateSpanningTrees(vertices);
 Console.WriteLine(result);
-

@@ -17,7 +17,7 @@
                 {
                     if (arr[j] > arr[j + 1])
                     {
-                        (arr[j], arr[j+1]) = (arr[j+1], arr[j]); // for swap element in array using tuple
+                        (arr[j], arr[j + 1]) = (arr[j + 1], arr[j]); // for swap element in array using tuple
                         isSwap = true;
                     }
                 }
@@ -25,7 +25,7 @@
                 {
                     return;
                 }
-            }           
+            }
         }
 
         /// <summary>
@@ -37,9 +37,8 @@
         {
             for (int i = 0; i < n; i++)
             {
-                Console.Write(arr[i] +" ");
+                Console.Write(arr[i] + " ");
             }
         }
     }
-
 }
